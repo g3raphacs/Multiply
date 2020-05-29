@@ -1,0 +1,31 @@
+//COLOR List
+$colors:(
+    'main':        rgb(44, 18, 110),
+    'main-dark':   rgb(25, 10, 65),
+    'main-light':  rgb(102, 68, 187),
+    'main-black':  #222533,
+    'sec':         #1ABC9C,
+    'grey':        #ECF0F1,
+    'grey30':      rgba(236, 240, 241, 0.3),
+    'black':       #171D22,
+);
+
+@each $name,$value in $colors{
+
+    //text color extension
+    %txt-#{$name}{color: $value;}
+
+    //text color class
+    .txt-#{$name}{
+        color: $value;
+    }
+
+    //background color extension
+    %bck-#{$name}{background-color: $value;}
+
+    //background color class
+    .bck-#{$name}{
+        background-color: $value;
+    }
+    
+}
