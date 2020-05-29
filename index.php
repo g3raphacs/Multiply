@@ -13,9 +13,9 @@
             <nav class="container flexspaceb m0child">
                 <div id="logo" class="flex">
                         <div><img src="/media/multiply-logo.png" alt="" width="100" height="100"></div>
-                        <p>Multiply</p>
+                        <p class="f-24">Multiply</p>
                 </div>
-                <menu class="flexspaceb">
+                <menu class="flexspaceb f-med">
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="tables.php">Tables</a></li>
                     <li><a href="tables2.php">Tables 2</a></li>

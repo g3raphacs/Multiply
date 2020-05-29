@@ -1,8 +1,10 @@
+@import 'modules/_colors';
+@import 'modules/_fonts';
 @import 'modules/_resets';
 @import 'modules/_boxmodel';
 
 #navbar{
-    background-color: rgb(44, 18, 110);
+    @extend %bck-main;
     color: white;
     nav{
         padding: 10px 0;
@@ -17,12 +19,17 @@
             }
             p{
                 font-family: 'Kalam', cursive;
+                line-height: 1rem;
             }
         }
         menu{
             flex: 0 70%;
             a{
                 color: white;
+                padding: 10px;
+                &:hover{
+                    border-bottom: 3px solid map-get($colors , "sec" );
+                }
             }
         }
     }
