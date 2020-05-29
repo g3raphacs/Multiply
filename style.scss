@@ -10,6 +10,9 @@
     @extend %bck-main;
     color: white;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+    max-height: 75px;
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
     nav{
         padding: 10px 25px 10px 10px;
         #logoburger{
@@ -27,7 +30,14 @@
                     line-height: 1rem;
                 }
             }
-            #burger{display: none;}
+            #burger{
+                display: none;
+                cursor: pointer;
+                border-radius: 12px;
+                &.btnDown{
+                    @extend %bck-main-dark;
+                }
+            }
         }
         menu{
             flex: 0 70%;
@@ -48,6 +58,9 @@ body{
     main>header{
         padding: 100px 0;
         margin-bottom: 50px;
+    }
+    main div{
+        transition: ease-in-out 0.5s;
     }
 }
 .tableSec{

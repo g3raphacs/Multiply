@@ -15,7 +15,7 @@
     nav{flex-wrap: wrap;}
     #navbar nav #logoburger{flex: 0 100%;}
     #navbar nav #logoburger #burger{display: block; padding: 5px 20px;}
-    #navbar nav menu{flex: 0 100%; margin-top: 10px;background-color: map-get($colors , "main-light" ); padding: 20px; border-radius: 12px;}
+    #navbar nav menu{flex: 0 100%; margin-top: 10px;background-color: map-get($colors , "main-dark" ); padding: 20px; border-radius: 12px;}
 }
 
 // XS_____________________________________________________________________________________
