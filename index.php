@@ -26,9 +26,9 @@
         </div>
     </header>
     <main>
-            <div class="container">
-                <h1 class="txt-white txt-center">Apprenez les tables de multiplication</h1>
-                <div class="flexspaceev wrap">
+        <header><h1 class="txt-white txt-center">Apprenez les tables de multiplication</h1></header>
+
+                <div class="container flexspaceev wrap">
                     <section id="table1" class="tableSec txt-black">
                         <header class="bck-white">
                         <h2 class="txt-center flex"><span>La table du </span><span class="numA">3</span></h2>
@@ -115,7 +115,6 @@
                         </div>
                     </section>
                 </div>
-            </div>
     </main>
 </body>
 </html>

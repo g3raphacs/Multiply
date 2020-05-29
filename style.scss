@@ -4,11 +4,14 @@
 @import 'modules/_boxmodel';
 
 #navbar{
+    position: fixed;
+    top: 0em;
+    width: 100vw;
     @extend %bck-main;
     color: white;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
     nav{
-        padding: 10px 0;
+        padding: 10px 25px 10px 15px;
         #logo{
             flex: 0 30%;
             div{height: 40px;
@@ -35,10 +38,17 @@
         }
     }
 }
-
+body{
+    position: absolute;
+    top: 60px;
+    width: 100vw;
+    main>header{
+        margin: 100px 0;
+    }
+}
 .tableSec{
-    width: 330px;
-    margin-bottom: 40px;
+    width: 350px;
+    margin:0px 10px 40px 10px;
     h2{
         display: block;
         span{display: block;}
@@ -48,7 +58,7 @@
         box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
         padding: 10px 20px;
         border-radius: 8px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .table{
         font-weight: 600;
