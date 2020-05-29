@@ -1,13 +1,26 @@
 //COLOR List
 $colors:(
-    'main':        rgb(44, 18, 110),
-    'main-dark':   rgb(25, 10, 65),
-    'main-light':  rgb(102, 68, 187),
+    'main':        #2c126e,
+    'main-dark':   #190a41,
+    'main-light':  #6644bb,
     'main-black':  #222533,
-    'sec':         rgb(187, 255, 0),
+    'sec':         #bbff00,
+    'ter':         #ff2793,
     'grey':        #ECF0F1,
     'grey30':      rgba(236, 240, 241, 0.3),
-    'black':       #171D22,
+    'black':       #50585f,
+    'white':       #ffffff,
+    'table1':      #FFC900,
+    'table2':      #00A1E7,
+    'table3':      #FF5400,
+    'table4':      #53BE00,
+    'table5':      #062EE7,
+    'table6':      #FF1779,
+    'table7':      #6644bb,
+    'table8':      #EB0000,
+    'table9':      #9C6800,
+    'table10':     #B168FF,
+
 );
 
 @each $name,$value in $colors{
@@ -27,5 +40,4 @@ $colors:(
     .bck-#{$name}{
         background-color: $value;
     }
-    
 }
