@@ -12,18 +12,20 @@
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
     nav{
         padding: 10px 25px 10px 15px;
-        #logo{
+        #logoburger{
             flex: 0 30%;
-            div{height: 40px;
-                img{
-                    height: 40px;
-                    width: 40px;
-                    margin-right: 8px;
+            #logo{
+                div{height: 40px;
+                    img{
+                        height: 40px;
+                        width: 40px;
+                        margin-right: 8px;
+                    }
                 }
-            }
-            p{
-                font-family: 'Kalam', cursive;
-                line-height: 1rem;
+                p{
+                    font-family: 'Kalam', cursive;
+                    line-height: 1rem;
+                }
             }
         }
         menu{
@@ -43,7 +45,8 @@ body{
     top: 60px;
     width: 100vw;
     main>header{
-        margin: 100px 0;
+        padding: 100px 0;
+        margin-bottom: 50px;
     }
 }
 .tableSec{
@@ -85,7 +88,7 @@ body{
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
         margin-top: 10px;
         line-height: 2.5rem;
-        padding: 15px 40px 5px 40px;
+        padding: 15px 20px 5px 20px;
         border-radius: 12px;
         font-family: 'Kalam', cursive;
         font-size: 3rem;

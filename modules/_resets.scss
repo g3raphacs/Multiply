@@ -4,7 +4,7 @@ body{
     padding: 0px;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    @extend %bck-black;
+    @extend %bck-main-dark;
 }
 // border-box all
 body *{box-sizing: border-box;}
