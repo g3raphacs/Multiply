@@ -1,0 +1,19 @@
+// FONTS Size____________________________________________________
+$font-sizes: 13 14 15 16 18 20 24 30 36;
+@each $size in $font-sizes{
+    .f-#{$size}{
+        $size: $size/16;
+        font-size: #{$size}rem;
+    }
+}
+
+// FONT Weights_____________
+.f-regular {    font-weight: 400;   }
+.f-med    {    font-weight: 600;   }
+.f-bold   {    font-weight: 700;   }
+
+// Align_________________
+.txt-left       {   text-align     : left;      }
+.txt-right      {   text-align     : right;     }
+.txt-center     {   text-align     : center;    }
+.txt-justify    {   text-align     : justify;   }
