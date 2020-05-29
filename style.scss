@@ -1,1 +1,29 @@
-hi{color:red;}
+@import 'modules/_resets';
+@import 'modules/_boxmodel';
+
+#navbar{
+    background-color: rgb(44, 18, 110);
+    color: white;
+    nav{
+        padding: 10px 0;
+        #logo{
+            flex: 0 30%;
+            div{height: 40px;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 8px;
+                }
+            }
+            p{
+                font-family: 'Kalam', cursive;
+            }
+        }
+        menu{
+            flex: 0 70%;
+            a{
+                color: white;
+            }
+        }
+    }
+}
