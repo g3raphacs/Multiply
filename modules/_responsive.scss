@@ -1,0 +1,26 @@
+
+// XL___base_____________________________________________________________________________
+// L_____________________________________________________________________________________
+@media (max-width: 1199.98px) {
+
+}
+
+// M_____________________________________________________________________________________
+@media (max-width: 991.98px) {
+
+}
+
+// S_____________________________________________________________________________________
+@media (max-width: 797.98px) {
+    nav{flex-wrap: wrap;}
+    #navbar nav #logoburger{flex: 0 100%;}
+    #navbar nav #logoburger #burger{display: block; padding: 5px 20px;}
+    #navbar nav menu{flex: 0 100%; margin-top: 10px;background-color: map-get($colors , "main-light" ); padding: 20px; border-radius: 12px;}
+}
+
+// XS_____________________________________________________________________________________
+@media (max-width: 575.98px) {
+    #navbar nav menu{flex-wrap: wrap; justify-content: center;}
+    #navbar nav menu li{flex: 0 100%; text-align:center;}
+    #navbar nav menu li a{display: inline-block; width: 80%;}
+}
