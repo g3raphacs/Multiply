@@ -75,15 +75,14 @@ body{
     header{
         box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
         padding: 10px 20px;
-        border-radius: 2px;
-        margin-bottom: 10px;
+        border-radius: 5px 5px 0px 0px;
     }
     .table{
         font-weight: 600;
         font-size: 1.3rem;
         box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
         padding: 10px 20px;
-        border-radius: 2px;
+        border-radius: 0px 0px 5px 5px;
         span{
             display: inline-block;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
@@ -93,7 +92,7 @@ body{
             font-family: 'Kalam', cursive;
             font-size: 1.3rem;
             &:nth-child(2){
-            color: map-get($colors , "main-light" );
+            color: map-get($colors , "main" );
             }
         }
     }
@@ -107,6 +106,11 @@ body{
         font-family: 'Kalam', cursive;
         font-size: 3rem;
     }
+}
+.btn-submit{
+    @extend %bck-main-dark;
+    border-radius: 12px;
+    margin: 10px;
 }
 
 @import 'modules/_responsive';

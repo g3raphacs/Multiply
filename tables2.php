@@ -18,8 +18,8 @@
                 <div class="container flexspaceev wrap">
                 <?php
                     require 'class/table.php';
-                    if (isset($_GET['tables'])){
-                        foreach($_GET['tables'] as $value){
+                    if (isset($_POST['tables'])){
+                        foreach($_POST['tables'] as $value){
                             $table = new table($value);
                         }
                     }
