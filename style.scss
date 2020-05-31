@@ -92,7 +92,6 @@ body{
             border-radius: 12px;
             font-family: 'Kalam', cursive;
             font-size: 1.3rem;
-            color: white;
             &:nth-child(2){
             color: map-get($colors , "main-light" );
             }
@@ -107,77 +106,6 @@ body{
         border-radius: 12px;
         font-family: 'Kalam', cursive;
         font-size: 3rem;
-        color: white;
-    }
-}
-#table1{
-    .numA{color: map-get($colors , "table1" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table1" );}
-        span:nth-child(3){background-color: map-get($colors , "table1" );}
-    }
-}
-#table2{
-    .numA{color: map-get($colors , "table2" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table2" );}
-        span:nth-child(3){background-color: map-get($colors , "table2" );}
-    }
-}
-#table3{
-    .numA{color: map-get($colors , "table3" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table3" );}
-        span:nth-child(3){background-color: map-get($colors , "table3" );}
-    }
-}
-#table4{
-    .numA{color: map-get($colors , "table4" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table4" );}
-        span:nth-child(3){background-color: map-get($colors , "table4" );}
-    }
-}
-#table5{
-    .numA{color: map-get($colors , "table5" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table5" );}
-        span:nth-child(3){background-color: map-get($colors , "table5" );}
-    }
-}
-#table6{
-    .numA{color: map-get($colors , "table6" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table6" );}
-        span:nth-child(3){background-color: map-get($colors , "table6" );}
-    }
-}
-#table7{
-    .numA{color: map-get($colors , "table7" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table7" );}
-        span:nth-child(3){background-color: map-get($colors , "table7" );}
-    }
-}
-#table8{
-    .numA{color: map-get($colors , "table8" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table8" );}
-        span:nth-child(3){background-color: map-get($colors , "table8" );}
-    }
-}
-#table9{
-    .numA{color: map-get($colors , "table9" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table9" );}
-        span:nth-child(3){background-color: map-get($colors , "table9" );}
-    }
-}
-#table10{
-    .numA{color: map-get($colors , "table10" );}
-    .table{
-        span:nth-child(1){color: map-get($colors , "table10" );}
-        span:nth-child(3){background-color: map-get($colors , "table10" );}
     }
 }
 
