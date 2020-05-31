@@ -15,7 +15,7 @@
         <h1 class="txt-white txt-center">Choisissez une table à afficher:</h1>
         <!-- formulaire -->
         <div class="container txt-center">
-            <form action="" method="GET">
+            <form action="" method="POST">
                 <input type="number" name="tables" min="1" max="10" placeholder="entre 1 et 10">
                 <button class="txt-white" type="submit">Afficher</button>
             </form>
@@ -24,8 +24,8 @@
                 <div class="container flexspaceev wrap">
                 <?php
                     require 'class/table.php';
-                    if ($_GET['tables']!=null){
-                        $table = new table($_GET['tables']);
+                    if (isset($_POST['tables']) && $_POST['tables']!=null){
+                        $table = new table($_POST['tables']);
                     }
                 ?>
                 </div>
