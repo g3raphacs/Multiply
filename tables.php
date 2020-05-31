@@ -15,10 +15,7 @@
         <h1 class="txt-white txt-center">Choisissez une table à afficher:</h1>
         <!-- formulaire -->
         <div class="container txt-center">
-            <form class="flexcenter" action="" method="POST">
-                <input type="number" name="tables" min="1" max="10" value="1" placeholder="entre 1 et 10">
-                <button class="txt-white btn-submit" type="submit"><img src="/media/validate.svg" alt="" width="40" height="40"></button>
-            </form>
+        <?php require 'class/formlist.php';?>
         </div>
         </header>
                 <div class="container flexspaceev wrap">

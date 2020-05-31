@@ -54,9 +54,9 @@
 body{
     position: absolute;
     top: 60px;
-    width: 100vw;
+    width: 100%;
     main>header{
-        padding: 60px 0;
+        padding: 30px 0;
         margin-bottom: 50px;
         h1{padding:0 20px ;}
     }
@@ -107,6 +107,24 @@ body{
         font-size: 3rem;
     }
 }
+.btn-select{
+    font-size: 1rem;
+    @extend %bck-white;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    line-height: 1rem;
+    height:40px;
+    min-width:60px;
+    padding-top: 3px;
+    border-radius: 12px;
+    font-family: 'Kalam', cursive;
+    // margin: 10px;
+    transition: ease-in-out 0.2s;
+    option{
+        font-size: 1rem;
+    }
+}
+
 .btn-submit{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
     @extend %bck-main-dark;
