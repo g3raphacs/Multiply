@@ -108,9 +108,26 @@ body{
     }
 }
 .btn-submit{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
     @extend %bck-main-dark;
     border-radius: 12px;
     margin: 10px;
 }
+.btn-table{
+    @extend %bck-white;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    line-height: 2.5rem;
+    height:40px;
+    min-width:40px;
+    padding-top: 3px;
+    border-radius: 18px;
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    margin: 10px;
+    transition: ease-in-out 0.2s;
+}
+.checkbox{display:none;}
+.checkbox:not(:checked) + .btn-table{@extend %bck-main-dark; color:white;border-radius: 5px;font-size: 1.5rem;padding-top: 2px;font-weight: 400;}
 
 @import 'modules/_responsive';
