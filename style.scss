@@ -58,6 +58,7 @@ body{
     main>header{
         padding: 100px 0;
         margin-bottom: 50px;
+        h1{padding:0 20px ;}
     }
     main div{
         transition: ease-in-out 0.5s;
@@ -74,7 +75,7 @@ body{
     header{
         box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
         padding: 10px 20px;
-        border-radius: 8px;
+        border-radius: 2px;
         margin-bottom: 10px;
     }
     .table{
@@ -82,7 +83,7 @@ body{
         font-size: 1.3rem;
         box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
         padding: 10px 20px;
-        border-radius: 8px;
+        border-radius: 2px;
         span{
             display: inline-block;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
