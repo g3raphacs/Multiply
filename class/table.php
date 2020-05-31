@@ -10,9 +10,7 @@ class Table
             for($i=1 ; $i<11 ; $i++){
                 echo '<p class="flexspaceev"><span>'.$n.'</span> x <span>'.$i.'</span> = <span>'.($n*$i).'</span></p>';
             }
-        echo '
-        </div>
-    </section>';
+        echo '</div></section>';
     }
 }
 
