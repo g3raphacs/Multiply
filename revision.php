@@ -17,10 +17,10 @@
         </header>
                 <div class="container flexspaceev wrap">
                 <?php
-                    require 'class/table.php';
+                    require 'class/question.php';
                     if (isset($_POST['tables'])){
                         foreach($_POST['tables'] as $value){
-                            $table = new table($value);
+                            $table = new Question($value);
                         }
                     }
                 ?>

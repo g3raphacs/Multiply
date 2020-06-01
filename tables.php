@@ -23,7 +23,7 @@
                     require 'class/table.php';
                     if (isset($_POST['tables'])){
                         foreach($_POST['tables'] as $value){
-                            $table = new table($value);
+                            $table = new Table($value);
                         }
                     }
                 ?>
