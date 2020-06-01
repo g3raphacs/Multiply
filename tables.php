@@ -15,14 +15,16 @@
         <h1 class="txt-white txt-center">Choisissez une table à afficher:</h1>
         <!-- formulaire -->
         <div class="container txt-center">
-        <?php require 'class/formlist.php';?>
+        <?php require 'class/formradio.php';?>
         </div>
         </header>
                 <div class="container flexspaceev wrap">
                 <?php
                     require 'class/table.php';
-                    if (isset($_POST['tables']) && $_POST['tables']!=null){
-                        $table = new table($_POST['tables']);
+                    if (isset($_POST['tables'])){
+                        foreach($_POST['tables'] as $value){
+                            $table = new table($value);
+                        }
                     }
                 ?>
                 </div>

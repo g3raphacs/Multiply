@@ -12,8 +12,8 @@
     <?php require 'class/header.php'; ?>
     <main>
         <header class="bck-main-light">
-        <h1 class="txt-white txt-center">Choisissez plusieurs tables à afficher:</h1>
-        <?php require 'class/formcheckbox.php';?>
+        <h1 class="txt-white txt-center">Choisissez une table à reviser:</h1>
+        <?php require 'class/formradio.php';?>
         </header>
                 <div class="container flexspaceev wrap">
                 <?php
