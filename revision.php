@@ -11,9 +11,35 @@
 <body>
     <?php require 'class/header.php'; ?>
     <main>
-        <header class="bck-main-light">
-        <h1 class="txt-white txt-center">Choisissez une table à reviser:</h1>
-        <?php require 'class/formradio.php';?>
+        <?php if (!(isset($_POST['tables'])) && !(isset($_GET['result']))): ?>
+            <header class="bck-main-light">
+            <h1 class="txt-white txt-center">Choisissez une table à reviser:</h1>
+            <?php require 'class/formradio.php'; ?>
+
+        <?php else: ?>
+            <?php if (!(isset($_GET['result']))): ?>
+
+                <header class="bck-main-light">
+                <h1 class="txt-white txt-center">Trouvez la bonne réponse:</h1>
+
+            <?php elseif ($_GET['result']==$_GET['reponse']): ?>
+
+                <header class="bck-table4">
+                <h1 class="txt-white txt-center">Bravo!</h1>
+                <p class="txt-center"><img src="media/happy.svg" alt="" width="45"></p>
+                <p class="txt-white txt-center f-18">La bonne réponse etait <span class="f-bold f-20"><?php echo $_GET['result']; ?></span></p>
+
+            <?php else: ?>
+
+                <header class="bck-table8">
+                <h1 class="txt-white txt-center">Perdu!</h1>
+                <p class="txt-center"><img src="media/sad.svg" alt="" width="45"></p>
+                <p class="txt-white txt-center f-18">La bonne réponse etait <span class="f-bold f-20"><?php echo $_GET['result']; ?></span></p>
+
+            <?php endif ?>
+        <?php endif ?>
+
+
         </header>
                 <div class="container flexspaceev wrap">
                 <?php

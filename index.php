@@ -14,7 +14,7 @@
         <header class="bck-main-light">
         <h1 class="txt-white txt-center">Apprenez les tables de multiplication</h1>
         </header>
-
+                
                 <div class="container flexspaceev wrap">
                 <?php
                     require 'class/table.php';
