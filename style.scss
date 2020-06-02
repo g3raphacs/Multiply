@@ -93,8 +93,6 @@ body{
         padding: 10px 20px;
         border-radius: 0px 0px 5px 5px;
         span{
-            // display: inline-block;
-            // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
             line-height: 1.3rem;
             padding: 5px 10px 0px 10px;
             border-radius: 12px;
@@ -111,7 +109,6 @@ body{
     }
     .numA{
         display: inline-block;
-        // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
         line-height: 2rem;
         padding: 8px 10px 0px 10px;
         border-radius: 12px;
@@ -144,7 +141,7 @@ body{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     padding: 15px;
-    margin: 10px;
+    margin: 20px;
 }
 .btn-submit{
     cursor: pointer;
@@ -170,6 +167,9 @@ body{
 .checkbox{display:none;}
 .checkbox:not(:checked) + .btn-table{@extend %bck-main-dark; color:white;border-radius: 5px;font-size: 1.5rem;padding-top: 2px;font-weight: 400;}
 
+.foot{padding: 25px 0px;}
+.score{padding-bottom: 30px;}
+.star{margin:0px 2px;}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
