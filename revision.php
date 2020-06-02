@@ -29,7 +29,7 @@
                 <p class="txt-center"><img src="media/happy.svg" alt="" width="45"></p>
                 <p class="txt-white txt-center f-18">La bonne réponse etait <span class="f-bold f-20"><?php echo $_GET['result']; ?></span></p>
                 </header>
-                <p class="txt-center"><a class="txt-white btn-replay bck-main" href="revision.php">Rejouer</a></p>
+                <p class="txt-center"><a class="txt-white btn-replay bck-main f-med" href="revision.php">Rejouer</a></p>
             <?php else: ?>
 
                 <header class="bck-table8">
@@ -37,7 +37,7 @@
                 <p class="txt-center"><img src="media/sad.svg" alt="" width="45"></p>
                 <p class="txt-white txt-center f-18">La bonne réponse etait <span class="f-bold f-20"><?php echo $_GET['result']; ?></span></p>
                 </header>
-                <p class="txt-center"><a class="txt-white btn-replay bck-main" href="revision.php">Rejouer</a></p>
+                <p class="txt-center"><a class="txt-white btn-replay bck-main f-med" href="revision.php">Rejouer</a></p>
             <?php endif ?>
         <?php endif ?>
 

@@ -7,5 +7,5 @@
                     }
                     ?>
                 </select>
-                <button class="txt-white btn-submit" type="submit"><img src="/media/validate.svg" alt="" width="40" height="40"></button>
+                <button class="txt-white btn-submit bck-main" type="submit"><img src="/media/validate.svg" alt="" width="40" height="40"></button>
             </form>
