@@ -1,6 +1,5 @@
 <?php
 
-    // launch form handling
     $value1 = random_int(2,10);
     $value2 = random_int(2,10);
     $result = $value1*$value2;

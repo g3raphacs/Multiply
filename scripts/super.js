@@ -17,7 +17,8 @@ window.addEventListener('load', function () {
         newQuestion.value1 = questions[i].querySelector('.QuestV1');
         newQuestion.value2 = questions[i].querySelector('.QuestV2');
         newQuestion.result = questions[i].querySelector('.QuestRes');
-        newQuestion.input = questions[i].querySelector('.QuestInput');
+        newQuestion.rep = questions[i].querySelector('.QuestUser');
+        newQuestion.repInput = questions[i].querySelector('.QuestUserInput');
         newQuestion.Vres = questions[i].querySelector('.Vres');
         newQuestion.Val1 = questions[i].querySelector('.V1');
         newQuestion.Val2 = questions[i].querySelector('.V2');
@@ -34,12 +35,14 @@ function newQuestions(){
         fetch('class/ajax.php').then(res=>res.json()).then(data=>{
             questObjects[i].value1.innerHTML = data.value1;
             questObjects[i].value1.style.color=colors[data.value1-1];
-            questObjects[i].value1.setAttribute('value', data.value1);
+            questObjects[i].Val1.setAttribute('value', data.value1);
             questObjects[i].value2.innerHTML = data.value2;
-            questObjects[i].value2.setAttribute('value', data.value2);
+            questObjects[i].Val2.setAttribute('value', data.value2);
             questObjects[i].result.innerHTML = data.result;
             questObjects[i].result.style.backgroundColor=colors[data.value1-1];
-            questObjects[i].input.style.backgroundColor=colors[data.value1-1];
+            questObjects[i].Vres.setAttribute('value', data.result);
+            questObjects[i].rep.style.backgroundColor=colors[data.value1-1];
+            questObjects[i].repInput.style.backgroundColor=colors[data.value1-1];
         });
     }
 }

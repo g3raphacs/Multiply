@@ -10,7 +10,7 @@ class Question
                 <p class="QuestIcon txt-center"><img src="media/sad.svg" alt="" width="45"></p>
             </header>
             <div class="table bck-white">
-                    <p class="flexspaceev f-15"><span class="QuestV1 txt-main">0</span> x <span class="QuestV2">0</span> = <span class="QuestRes txt-white bck-main">0</span><span class="QuestInput txt-white bck-main"><input class="rep f-bold f-16 txt-white txt-center bck-main" type="number" placeholder="?" min="0" name="reponse[]" required /></span></p>
+                    <p class="flexspaceev f-15"><span class="QuestV1 txt-main">0</span> x <span class="QuestV2">0</span> = <span class="QuestRes txt-white bck-main">0</span><span class="QuestUser txt-white bck-main"><input class="QuestUserInput rep f-bold f-16 txt-white txt-center bck-main" type="number" placeholder="?" min="0" name="reponse[]" required /></span></p>
                     <input class="Vres" type="hidden" name="result[]" value="0" />
                     <input class="V1"type="hidden" name="val1[]" value="0" />
                     <input class="V2"type="hidden" name="val2[]" value="0" />
