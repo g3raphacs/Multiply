@@ -14,6 +14,7 @@
                     <li><a href="tables2.php">Tables 2</a></li>
                     <li><a href="revision.php">Révision</a></li>
                     <li><a href="superrevision.php">Super Révision</a></li>
+                    <li><a href="superajax.php">Super Révision++</a></li>
                 </menu>
             </nav>
         </div>
