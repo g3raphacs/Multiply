@@ -40,7 +40,6 @@ function newQuestions(){
             questObjects[i].result.innerHTML = data.result;
             questObjects[i].result.style.backgroundColor=colors[data.value1-1];
             questObjects[i].input.style.backgroundColor=colors[data.value1-1];
-            
         });
     }
 }
