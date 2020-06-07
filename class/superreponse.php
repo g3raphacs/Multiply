@@ -7,7 +7,7 @@ class Reponse
 
 
         echo
-        '<section id="table'.$val1.'" class="tableSec txt-main-black">';
+        '<section class="tableSec txt-main-black">';
 
             if($reponse==($val1*$val2)){
                 echo'<header class="bck-table4"><h2 class="txt-center f-18 flex"><span class="txt-white quest">Réponse : '.$reponse.'</span></h2><p class="txt-center"><img src="media/happy.svg" alt="" width="45"></p>';

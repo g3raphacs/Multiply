@@ -6,7 +6,7 @@ class Question
     public function __construct(int $n){
         $randnum = rand(5,10);
         echo
-        '<section id="table'.$n.'" class="tableSec txt-main-black">
+        '<section class="tableSec txt-main-black">
             <header class="bck-main">
                 <h2 class="txt-center f-18 flex"><span class="txt-white quest">Calculez :</span></h2>
             </header>

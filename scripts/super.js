@@ -1,5 +1,12 @@
 //FUNCTIONS
 function newQuestions(i){
+    for(let i=0 ; i<5 ; i++){
+        let star= stars[i];
+        star.setAttribute('src', 'media/staroff.svg');
+    }
+    Score.style.display='none';
+    score=0;
+    subButton.style.display='flex'
         fetch('class/ajax.php').then(res=>res.json()).then(data=>{
             questObjects[i].value1.innerHTML = data.value1;
             questObjects[i].value1.style.color=colors[data.value1-1];
@@ -15,9 +22,6 @@ function newQuestions(i){
             questObjects[i].smiley.style.display='none';
             questObjects[i].result.style.display='none';
             questObjects[i].rep.style.display='inline';
-            Score.style.display='none';
-            score=0;
-            subButton.style.display='flex'
         });
 }
 let score = 0;
@@ -32,6 +36,8 @@ let replayButton = document.getElementById('REPLAY');
 let Score = document.getElementById('REPONSE');
 //List Question objects
 let questObjects = [];
+//List Stars objects
+let stars = document.getElementsByClassName('star');
 //Create question objects
 window.addEventListener('load', function () {
     for (let i = 0 ; i<5 ; i++){
@@ -80,5 +86,18 @@ form.addEventListener('submit', (e)=>{
                     questObjects[i].smiley.setAttribute('src', 'media/sad.svg');
                 }
             }
+            for(let i=0 ; i<score ; i++){
+                let star= stars[i];
+                star.setAttribute('src', 'media/staron.svg');
+            }
         });
+});
+
+replayButton.addEventListener('click' , function(){
+    for (let i = 0 ; i<5 ; i++){
+        questObjects[i].title.style.backgroundColor='#1c1a22';
+        questObjects[i].repInput.value = null;
+        questObjects[i].repInput.style.border = 'none';
+        newQuestions(i);
+    }
 });

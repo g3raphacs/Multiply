@@ -12,18 +12,20 @@
     <?php require 'class/header.php'; ?>
     <main>
         <header class="bck-main-light">
-        <h1 class="txt-white txt-center">Choisissez plusieurs tables à afficher:</h1>
-        <?php require 'class/formcheckbox.php';?>
+            <h1 class="txt-white txt-center">Choisissez plusieurs tables à afficher:</h1>
+            <div class="container txt-center">
+                <?php require 'class/formcheckbox.php';?>
+            </div>
         </header>
                 <div class="container flexspaceev wrap">
-                <?php
-                    require 'class/table.php';
-                    if (isset($_POST['tables'])){
-                        foreach($_POST['tables'] as $value){
-                            $table = new Table($value);
+                    <?php
+                        require 'class/table.php';
+                        if (isset($_POST['tables'])){
+                            foreach($_POST['tables'] as $value){
+                                $table = new Table($value);
+                            }
                         }
-                    }
-                ?>
+                    ?>
                 </div>
     </main>
     <!-- Script MENU______________________________________________________________________ -->

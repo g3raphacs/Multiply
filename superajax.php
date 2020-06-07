@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">vagrant
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiply</title>
     <link rel="icon" type="image/png" href="media/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
                 </div>
                 <div id="SUB" class="flexcenter bck-main-light"><button class="txt-white btn-submit bck-main" type="submit"><img src="/media/validate.svg" alt="" width="40"  height="40"></button></div>
             </form>
-    <!-- REPONSE__________________________ -->
+    <!-- SCORE__________________________ -->
 
             <div id="REPONSE" class="foot bck-main-light">
                 <p class="txt-white txt-center f-20 f-med">Votre score :</p>
