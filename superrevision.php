@@ -25,7 +25,7 @@
                         }
                     ?>
                 </div>
-                <div class="flexcenter bck-main-light"><button class="txt-white btn-submit bck-main" type="submit"><img src="/media/validate.svg" alt="" width="40"  height="40"></button></div>
+                <div class="flexcenter bck-main-light"><button class="txt-white btn-submit bck-main" type="submit"><img src="media/validate.svg" alt="" width="40"  height="40"></button></div>
             </form>
             <?php else : ?>
             <header class="bck-main-light">

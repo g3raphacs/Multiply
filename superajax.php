@@ -25,7 +25,7 @@
                         }
                     ?>
                 </div>
-                <div id="SUB" class="flexcenter bck-main-light"><button class="txt-white btn-submit bck-main" type="submit"><img src="/media/validate.svg" alt="" width="40"  height="40"></button></div>
+                <div id="SUB" class="flexcenter bck-main-light"><button class="txt-white btn-submit bck-main" type="submit"><img src="media/validate.svg" alt="" width="40"  height="40"></button></div>
             </form>
     <!-- SCORE__________________________ -->
 
