@@ -3,14 +3,18 @@
 @import 'modules/_resets';
 @import 'modules/_boxmodel';
 
+@mixin shadow {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+
 #navbar{
+    @include shadow;
     z-index: 2;
     position: fixed;
     top: 0em;
     width: 100vw;
     @extend %bck-main;
     color: white;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
     max-height: 75px;
     overflow: hidden;
     transition: ease-in-out 0.5s;
@@ -45,7 +49,9 @@
             a{
                 color: white;
                 padding: 10px;
+                border-width: 30px;
                 &:hover{
+                    border-width: 30px;
                     border-bottom: 3px solid map-get($colors , "sec" );
                 }
             }
@@ -82,16 +88,18 @@ body{
         top: -6px;
     }
     header{
-        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+        @include shadow;
         padding: 10px 20px;
         border-radius: 5px 5px 0px 0px;
+        transition: ease-in-out 0.4s;
     }
     .table{
         font-weight: 600;
         font-size: 1.3rem;
-        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+        @include shadow;
         padding: 10px 20px;
         border-radius: 0px 0px 5px 5px;
+        transition: ease-in-out 0.4s;
         span{
             line-height: 1.3rem;
             padding: 5px 10px 0px 10px;
@@ -100,10 +108,10 @@ body{
             font-size: 1.3rem;
             &:nth-child(2){
             color: map-get($colors , "black" );
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+            @include shadow;
             }
             &:nth-child(1){
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+            @include shadow;
             }
         }
     }
@@ -124,7 +132,7 @@ body{
     font-size: 1rem;
     @extend %bck-white;
     display: inline-block;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    @include shadow;
     line-height: 1rem;
     height:40px;
     min-width:60px;
@@ -138,14 +146,14 @@ body{
 }
 .btn-replay{
     cursor: pointer;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    @include shadow;
     border-radius: 12px;
     padding: 15px;
     margin: 20px;
 }
 .btn-submit{
     cursor: pointer;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    @include shadow;
     border-radius: 12px;
     margin: 10px;
 }
@@ -153,7 +161,7 @@ body{
     cursor: pointer;
     @extend %bck-white;
     display: inline-block;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    @include shadow;
     line-height: 2.5rem;
     height:40px;
     min-width:40px;
